@@ -6,18 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <form></form>
-       <label for="fnamae">First Name</label>
-       <input type="text" id="fname" name="fname">  
-       <input for="sname">Surname</input>
-       <input type="text" id="sname" name="sname">    
-       <button type="submit">Submit</button>
-       <p>First name</p>
-       <p id="firstname"></p>
-       <p>Surname</p>
-       <p id="surname"></p>
-        
-
+    <form name="myform">
+       <label for="fname">First Name</label>
+       <input type="text" id="fname" name="fname" oninput="changeFName()">
+         <br><br>
+       <label for="sname">Surname</label>
+       <input type="text" id="sname" name="sname" oninput="changeSName()"> 
+         <br><br> 
+       <p>First name: <span id="firstname"></span></p>
+       <p>Surname: <span id="surname"></span></p>
+    </form>
     <script src="index.js" defer></script>
 </body>
 </html>
