@@ -14,3 +14,8 @@ const changeSName = () => {
     let surName = document.getElementById("sname").value;
     surNameTextBox.innerText = surName;
 }   
+
+// Adding onmouseenter event listener to the field 
+const changeColor = (color) => {
+    document.getElementById("mydiv").style.backgroundColor = color;
+}
