@@ -19,3 +19,8 @@ const changeSName = () => {
 const changeColor = (color) => {
     document.getElementById("mydiv").style.backgroundColor = color;
 }
+
+// Adding removeWelcome function to remove the welcome message
+const removeWelcome = () => {
+    document.getElementById("welcomeScreen").remove();
+}
